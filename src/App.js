@@ -8,8 +8,10 @@ import { Navbar } from "./component/Navbar";
 import Add from "./component/Add";
 import { dark, light } from "@mui/material/styles/createPalette";
 import { ThemeProvider } from "@emotion/react";
+import './App.css'
 
 function App() {
+  
   const [mode,setMode] = useState("light")
   const darkTheme = createTheme({
     palette:{
@@ -17,7 +19,8 @@ function App() {
     },
   });
   return (
-    <ThemeProvider theme={darkTheme}>
+    <div className="App">
+ <ThemeProvider theme={darkTheme}>
        <Box bgcolor={"background.default"} color={"text.primary"}>
     <Navbar/>
     <Stack direction="row" spacing={2} justifyContent = "space-between">
@@ -29,6 +32,8 @@ function App() {
   <Add/>
   </Box>
     </ThemeProvider>
+    </div>
+   
  
   );
     

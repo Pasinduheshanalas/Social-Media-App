@@ -8,23 +8,22 @@ import VideoCameraBack from '@mui/icons-material/VideoCameraBack';
 import PersonAddAlt1 from '@mui/icons-material/PersonAddAlt1';
 import CalendarMonth from '@mui/icons-material/CalendarMonth';
 
-
+//Make styledModal Component
 const StyledModal = styled(Modal)({
      display:"flex",
      alignItems:"center",
      justifyContent:"center"
 })
-
+//Make UserBox Component
 const UserBox = styled(Box)({
     display:"flex",
     alignItems:"center",
     gap:"10px",
-    marginBottom:"20px"
-
-    
+    marginBottom:"20px"  
 })
 
 export default function Add() {
+  // useState For Open Window
     const [open, setOpen] = useState(false)
   return (
 <>
@@ -39,6 +38,7 @@ export default function Add() {
     aria-labelledby="modal-modal-title"
     aria-describedby="modal-modal-description"> 
   <Box width={400}  height={280} bgcolor="#fff" p={3} borderRadius={5} >
+    {/* Title */}
         <Typography varient="h6" color={"gray"} textAlign="center">
             Create Post
         </Typography>
@@ -57,12 +57,14 @@ export default function Add() {
           rows={4}
           variant="standard"
         />
+        {/* Icon Set */}
         <Stack direction="row" gap={1} mt={2} mb={3}>
             <EmojiEmotions color='primary'/>
             <Image color='secondary'/>
             <VideoCameraBack color='success'/>
             <PersonAddAlt1 color='error'/>
         </Stack>
+        {/* button Group */}
         <ButtonGroup 
         fullWidth
         variant="contained" aria-label="outlined primary button group">

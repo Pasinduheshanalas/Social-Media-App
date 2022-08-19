@@ -14,6 +14,7 @@ export const Slidebar = ({mode,setMode}) => {
     <Box  flex="2" p={2}
     sx = {{display:{xs:"none", sm:"block"}}}>
      <Box position="fixed">
+    {/* Side List */}
      <List>
           <ListItem disablePadding>
             <ListItemButton component = "a" href = "#home">
@@ -73,6 +74,7 @@ export const Slidebar = ({mode,setMode}) => {
           </ListItem>
           <ListItem disablePadding>
             <ListItemButton component = "a" href = "#moon">
+          {/* Dark Mode */}
               <ListItemIcon>
               <DarkMode/>
               </ListItemIcon>
