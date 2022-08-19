@@ -4,6 +4,7 @@ import {Box, Typography,AvatarGroup,Avatar, ImageList, ImageListItem, List, List
 export const Rightbar = () => {
   return (
     <Box flex="2" p={2}
+    // Set Responsive
     sx = {{display:{xs:"none", sm:"block"}}}>
      <Box position="fixed" width={300}>
           <Typography varient="h6" fontWeight={100}>
@@ -20,6 +21,7 @@ export const Rightbar = () => {
           <Typography>
             Latest Photos
           </Typography>
+          {/* Image Pallet */}
           <ImageList cols={3} rowHeight={100} gap={5}>
             <ImageListItem>
             <img
@@ -55,6 +57,7 @@ export const Rightbar = () => {
           <Typography varient="h6" fontWeight={100}>
             Recent Chats
           </Typography>
+          {/* Recent Chat Pallet */}
               <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
                 <ListItem alignItems="flex-start">
                   <ListItemAvatar>

@@ -19,6 +19,7 @@ import Favorite from '@mui/icons-material/Favorite';
 function Post() {
   return (
     <Box>
+      {/* Cards */}
          <Card sx = {{margin:5}} >
       <CardHeader
         avatar={
