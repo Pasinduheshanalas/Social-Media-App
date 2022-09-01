@@ -11,7 +11,6 @@ import { ThemeProvider } from "@emotion/react";
 import './App.css'
 
 function App() {
-  
   const [mode,setMode] = useState("light")
   const darkTheme = createTheme({
     palette:{
@@ -20,24 +19,18 @@ function App() {
   });
   return (
     <div className="App">
- <ThemeProvider theme={darkTheme}>
+    <ThemeProvider theme={darkTheme}>
        <Box bgcolor={"background.default"} color={"text.primary"}>
     <Navbar/>
     <Stack direction="row" spacing={2} justifyContent = "space-between">
       <Slidebar setMode={setMode} mode={mode}/>
       <Feed/>
-      <Rightbar/>
-      
+      <Rightbar/>   
   </Stack>
   <Add/>
   </Box>
     </ThemeProvider>
     </div>
-   
- 
   );
-    
- 
 }
-
 export default App;

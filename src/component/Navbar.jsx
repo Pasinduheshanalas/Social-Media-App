@@ -34,8 +34,6 @@ const UserBox = styled(Box)(({theme})=>({
     display:"flex"
   }
 }))
-
-
 export const Navbar = () => { 
   //useState For Open Close Menu
   const [open,setOpen] = useState(false);
